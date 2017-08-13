@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Corpuscule - Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Shopping Cart</h1>
+    <br>
+    <form action="" method="post">
+        <input type="text" placeholder="Item Name " name="itemname" value="{{ request.form.itemname }}">
+        <input type="text" placeholder="Amount" name="amount" value="{{ request.form.amount }}">
+        <input type="text" placeholder="Quantity" name="quantity" value="{{ request.form.quantity }}">
+        <input class="btn btn-default" type="submit" value="Submit">
+    </form>
+    {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
+  {% if success %}
+    <p class="error"><strong>Transaction ID:</strong> {{ success }}
+  {% endif %}
+</div>
+</body>
+</html>
