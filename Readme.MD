@@ -1,4 +1,4 @@
-#CORPUSCULE
+# CORPUSCULE
 
 This project uses  [Bigchaindb](https://github.com/bigchaindb/bigchaindb) as a backend database.
 
@@ -17,7 +17,7 @@ For Mac installation, follow the following commands
 
 **RethinkDB:** `docker pull rethinkdb:2.3`
 
-#####Create Bigchain configuration file on Mac
+##### Create Bigchain configuration file on Mac
 
 `docker run 
   --rm 
@@ -26,7 +26,7 @@ For Mac installation, follow the following commands
   -y configure 
   rethinkdb`
   
-#####Run the RethinkDB server on Docker
+##### Run the RethinkDB server on Docker
 
 `docker run 
   --name=rethinkdb 
@@ -36,7 +36,7 @@ For Mac installation, follow the following commands
   --volume $HOME/bigchaindb_docker:/data 
   rethinkdb:2.3`
   
-#####Run BigchainDB on Mac
+##### Run BigchainDB on Mac
 
 `docker run 
   --name=bigchaindb 
